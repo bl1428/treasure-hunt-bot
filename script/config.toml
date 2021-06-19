@@ -1,9 +1,9 @@
 # Treasure Hunt Bot configuration
 
-botToken = "ODU1NjYzODI5MDU3MTQyNzg0.YM1xCg.cGfHtrkNR28r87A2n4tP-dBiGZE" # The bot's OAuth2 token
-guildId = "581606245841240095" # The ID of the Discord Server that the bot belongs to
+botToken = "your_token_here" # The bot's OAuth2 token
+guildId = "your_guild_id_here" # The ID of the Discord Server that the bot belongs to
 missResponse = "Sorry, that's incorrect. Try again!" # This is the bot's response if the user is wrong.
-rewardRole = "test-role" # The name of the role to grant as a reward for a correct answer. Empty string disables role granting.
+rewardRole = "" # The name of the role to grant as a reward for a correct answer. Empty string disables role granting.
 
 # Key-value pairs of correct answers and the corresponding responses from the bot.
 # Must contain at least one key-value pair.
