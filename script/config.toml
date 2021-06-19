@@ -1,1 +1,11 @@
-botToken = "your_token_here"
+# Treasure Hunt Bot configuration
+
+botToken = "your_token_here" # The bot's OAuth2 token
+missResponse = "Sorry, that's incorrect. Try again!" # This is the bot's response if the user is wrong.
+
+# Key-value pairs of correct answers and the corresponding responses from the bot.
+# Must contain at least one key-value pair.
+[correctAnswers]
+"moist" = "That's correct!"
+"wet" = "Also acceptable!"
+"moist and wet" = "You're the best!"
