@@ -35,8 +35,18 @@ client.on('message', async msg => {
         let dmContent = config.missResponse;
 
         if (msg.content in correctAnswers) {
-            dmContent = correctAnswers[msg.content];
+            dmContent = correctAnswers[msg.content];    // Set reply
+
+            // If configured, grant reward role to message sender
+            // This is a DM, so we must find the necessary guild context to accomplish this.
+            if (config.rewardRole) {
+                let guild = client.guilds.cache.get(config.guildId);    // Get the guild by ID
+                let role = guild.roles.cache.find(role => role.name === config.rewardRole); // Get the role by name
+                let member = guild.members.cache.find(member => member.id === msg.author.id);   // Get the guild member using msg sender's ID
+                member.roles.add(role); // Finally, add the role
+            }
         }
+
         msg.reply(dmContent);
     }
 });
