@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/bl1428/treasure-hunt-bot#readme",
   "dependencies": {
-    "discord.js": "^12.5.3"
+    "discord.js": "^12.5.3",
+    "toml": "^3.0.0"
   }
 }
