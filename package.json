@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/bl1428/treasure-hunt-bot/issues"
   },
-  "homepage": "https://github.com/bl1428/treasure-hunt-bot#readme"
+  "homepage": "https://github.com/bl1428/treasure-hunt-bot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3"
+  }
 }

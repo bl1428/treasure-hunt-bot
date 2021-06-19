@@ -1,2 +1,2 @@
 # treasure-hunt-bot
-Discord bot for ARGs
+This is a Discord bot which responds to DMs with set responses.
